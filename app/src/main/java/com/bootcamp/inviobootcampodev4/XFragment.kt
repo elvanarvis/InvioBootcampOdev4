@@ -29,10 +29,10 @@ class XFragment : Fragment(R.layout.fragment_x) {
                 c3.setText("Korona mı?: Hayır")
             else
                 c3.setText("Korona mı?: Evet")
-        }
 
-        binding.goYftomX.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_XFragment_to_YFragment)
+            goYftomX.setOnClickListener {
+                Navigation.findNavController(it).navigate(R.id.action_XFragment_to_YFragment)
+            }
         }
     }
 }
